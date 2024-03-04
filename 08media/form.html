@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio website for me to show my work in the 3d field">
+        <meta name="author" content="Ethan Ware">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ethan Ware Portfolio Page: Form</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <!-- start of page header -->
+        <header>
+            <img src="images/warehouse.png" alt="site logo" width="100" height = "88">
+            <div>
+                <h1>Ethan Ware Portfolio</h1>
+            </div>
+        </header>
+        <!-- start of page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modeling.html">Modeling</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="address.html">Address</a></li>
+            </ul>
+        </nav>
+        <!-- start of page content -->
+        <main>
+        <h1>Feedback Form</h1>
+            
+            <form method="get" class="feedback" action="thanks.html">
+            
+            <fieldset>
+                <legend>Give me your personal information :)</legend>
+                    <label>First Name*<input type="text" name="fname" required>
+                    </label>
+                    <label>Last Name*<input type="text" name="lname" required>
+                    </label>
+                    <label>Cell Number*<input type="tel" name="phone" required placeholder="111-222-3333">
+                    </label>
+                    <label>Email*<input type="email" name="email" required placeholder="myemail@mail.com">
+                    </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>What is your preferred 3d software?</legend>
+                <label><input type="radio" name="software" value="maya">Autodesk Maya
+                    </label>
+                <label><input type="radio" name="software" value="zbrush">ZBrush
+                    </label>
+                <label><input type="radio" name="software" value="blender">Blender
+                    </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>What do you think I am stongest at</legend>
+                <label>
+                    Pick one
+                    <select name="strength">
+                        <option value="none">Please Select</option>
+                        <option value="geo">Geometry Efficiency</option>
+                        <option value="deform">Skinning Deformations</option>
+                        <option value="design">Visual Design</option>
+                        <option value="rig">Rig Usability</option>
+                    </select>
+                </label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Where do you think I can improve?</legend>
+                <label><input type="checkbox" name="geo" value="yes"> Geometry Efficiency
+                    </label>
+                <label><input type="checkbox" name="deform" value="yes"> Skinning Deformations
+                    </label>
+                <label><input type="checkbox" name="design" value="yes"> Visual Design
+                    </label>
+                <label><input type="checkbox" name="rig" value="yes"> Rig Usability
+                    </label>
+            </fieldset>
+            
+            <label>
+                Comments
+                <textarea name="comments" placeholder="Got something more to say? Put it here."></textarea>
+            </label>
+            
+            <input type="submit" value="Send Feedback">
+        </form>
+            
+            
+            
+        </main>
+        <!-- start of page footer -->
+        <footer>
+        <!-- the address is not my actual address because that's something I don't want out there, same with the phone number for now -->
+            <p><a href="mailto:10841219@uvu.edu">Email Me</a></p>
+            <p><a href="https://www.artstation.com/kirbinator505" target="_blank">Come To my Artstation</a></p>
+            <p><a href="https://sketchfab.com/kirbinator505_" target="_blank">Or my Sketchfab</a></p>
+            <p>&copy; 2024 &bull; Ethan Ware</p>
+            <address>
+                1600 Pennsylvania Avenue, NW<br>
+                Washington, DC 20500<br>
+                <a href="tel:1112223333">111-222-3333</a>
+            </address>
+        </footer>
+    </body>
+</html>
